@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hannah's Reading Workshop · Exercise 3 Note-taking</title>
+<meta name="description" content="Cambridge IGCSE ESL 0511 Reading Exercise 3 Note-taking 真题精讲：原文逐句、笔记题答案句彩色高亮、B2–C1 词汇（含 IPA 与发音）与长难句拆解。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232b2721'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23fff' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<!-- ============ 顶栏 ============ -->
+<header class="hdr">
+  <div class="brand">
+    <span class="brand-mark">H</span>
+    <span class="brand-txt">Hannah's <em>Reading</em> Workshop<span class="brand-sub">Exercise 3 · Note-taking</span></span>
+  </div>
+
+  <div class="hdr-mid">
+    <button class="navbtn" id="prevP" title="上一篇">‹</button>
+    <div class="picker">
+      <select id="pSelect" aria-label="选择篇目"></select>
+    </div>
+    <button class="navbtn" id="nextP" title="下一篇">›</button>
+  </div>
+
+  <div class="hdr-right">
+    <a class="xlink" href="../index.html" title="全部练习">总览</a>
+    <a class="xlink" href="https://cbydh7v78c-prog.github.io/hannahs-reading-workshop/" title="切换到 Exercise 1">Ex 1 ↗</a>
+    <a class="xlink" href="https://cbydh7v78c-prog.github.io/hannahs-reading-workshop-ex2/" title="切换到 Exercise 2">Ex 2 ↗</a>
+    <a class="xlink" href="../ex4/index.html" title="切换到 Exercise 4">Ex 4 →</a>
+    <span class="tip">点击题号 → 答案句亮起</span>
+    <button class="btn" id="btnToggle" title="切换答案句高亮">隐藏高亮</button>
+    <button class="btn btn-ghost" id="btnReset" title="清空作答">重做</button>
+  </div>
+</header>
+
+<!-- ============ 主体 ============ -->
+<main class="workspace">
+
+  <!-- 左：原文 -->
+  <section class="pane pane-a" aria-label="原文">
+    <div class="a-head">
+      <div class="a-meta">
+        <span class="chip chip-dark" id="metaPaper">—</span>
+        <span class="chip" id="metaTopic">—</span>
+        <span class="chip" id="metaMarks">—</span>
+      </div>
+      <h1 class="a-title" id="aTitle">—</h1>
+      <p class="a-stand" id="aStand"></p>
+      <p class="a-intro" id="aIntro"></p>
+      <div class="a-tools">
+        <span class="legend" id="legend"></span>
+      </div>
+    </div>
+    <div class="a-scroll" id="aScroll">
+      <article class="article" id="article"></article>
+      <div class="a-end">— 文章结束 —</div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span class="grip">⋮⋮</span></div>
+
+  <!-- 右：题目 -->
+  <section class="pane pane-b" aria-label="题目与讲解">
+    <div class="b-head">
+      <div class="tabs" id="tabs" role="tablist">
+        <button class="tab is-on" data-tab="q" role="tab">笔记题 <b id="cQ">0</b></button>
+        <button class="tab" data-tab="v" role="tab">B2–C1 词汇 <b id="cV">0</b></button>
+        <button class="tab" data-tab="s" role="tab">长难句 <b id="cS">0</b></button>
+      </div>
+      <div class="score">
+        <span id="scoreChip">0 / 7</span>
+        <span class="score-lbl">得分</span>
+      </div>
+    </div>
+    <div class="b-scroll" id="bScroll">
+      <div class="tabbody" id="tabbody"></div>
+    </div>
+  </section>
+
+</main>
+
+<button class="fab" id="fabQ">跳到题目</button>
+<div id="toast"></div>
+
+<script>window.EX = { no: 3, type: 'note', label: 'Exercise 3 · Note-taking' };</script>
+<script src="../data/ex3/p01.js"></script>
+<script src="../data/ex3/p02.js"></script>
+<script src="../data/ex3/p03.js"></script>
+<script src="../data/ex3/p04.js"></script>
+<script src="../data/ex3/p05.js"></script>
+<script src="../data/ex3/p06.js"></script>
+<script src="../data/ex3/p07.js"></script>
+<script src="../data/ex3/p08.js"></script>
+<script src="../data/ex3/p09.js"></script>
+<script src="../data/ex3/p10.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
